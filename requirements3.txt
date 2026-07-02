@@ -1,6 +1,6 @@
 #additional required packages
 azure-ai-ml
-semantic-kernel[azure]==1.28.0
+semantic-kernel[azure]>=1.53.1   # >=1.53.1 required for the New Foundry (endpoint-based AzureAIAgent)
 autogen
 autogen-agentchat
 autogen-ext[openai]

@@ -76,7 +76,7 @@ Before starting the workshop, ensure you have:
       1. Go to [Azure AI Foundry](https://ai.azure.com)
       2. Create a new AI Hub and Project using the AI Foundry Wizard
       3. Deploy required models:
-         - GPT models(gpt-4o, gpt-4o-mini) for chat/completion (**set TPM to max** to avoid issues with Agents notebooks)
+         - GPT models(gpt-5.4, gpt-5.4-mini) for chat/completion (**set TPM to max** to avoid issues with Agents notebooks)
          - Embedding model for vector search
          - Ensure the model is deployed in `Global-Standard` or `DataZone-Standard`
       4. Set up connections:
