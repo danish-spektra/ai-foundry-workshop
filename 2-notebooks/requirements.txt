@@ -1,13 +1,13 @@
 # Azure Authentication and Core Services
 azure-identity                         # Azure authentication and credentials management
-azure-ai-projects                      # Azure AI project management and orchestration
+azure-ai-projects>=2.3.0               # Azure AI project management (v2 / New Foundry endpoint-based client)
 azure-search-documents                 # Azure AI Search integration
+openai>=2.8.0                          # OpenAI library used via project.get_openai_client()
 
 autogen-agentchat
 autogen-ext[azure]
 
 # Azure AI Services
-azure-ai-inference[opentelemetry]      # Azure AI inference with telemetry support
 azure-ai-evaluation                    # Azure AI model evaluation and testing
 azure-ai-contentsafety                 # Content moderation and safety services
 
