@@ -25,8 +25,7 @@ You can run this workshop in several ways:
 - [Basic Chat Completion](../2-notebooks/1-chat_completion/1-basic-chat-completion.ipynb)
 - [Embeddings](../2-notebooks/1-chat_completion/2-embeddings.ipynb)
 - [Basic RAG](../2-notebooks/1-chat_completion/3-basic-rag.ipynb)
-- [Phi-4-reasoning Model](../2-notebooks/1-chat_completion/4-phi-4-reasoning.ipynb)
-- [DeepSeek-V4-Flash Model](../2-notebooks/1-chat_completion/5-deepseek-v4-flash.ipynb)
+- [Phi-4 Model](../2-notebooks/1-chat_completion/4-phi-4.ipynb)
 
 ### 3. Building AI Agents (2 hours)
 - [Agent Basics](../2-notebooks/2-agent_service/1-basics.ipynb)
