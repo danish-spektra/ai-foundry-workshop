@@ -39,7 +39,7 @@ class TrialAgentCoordinator:
             try:
                 # Create Team Leader agent
                 self.agents["team_leader"] = await self.project_client.agents.create_agent(
-                    model="gpt-4o",
+                    model="gpt-5.2",
                     instructions="""You are the Team Leader agent coordinating trial analysis.
                     Analyze incoming trial events and delegate tasks to specialized agents."""
                 )
@@ -51,7 +51,7 @@ class TrialAgentCoordinator:
                 }
                 for agent_id, instructions in agent_specs.items():
                     self.agents[agent_id] = await self.project_client.agents.create_agent(
-                        model="gpt-4o",
+                        model="gpt-5.2",
                         instructions=instructions
                     )
                 span.set_attribute("agents.initialized", len(self.agents))

@@ -76,7 +76,7 @@ Before starting the workshop, ensure you have:
       1. Go to [Azure AI Foundry](https://ai.azure.com)
       2. Create a new AI Hub and Project using the AI Foundry Wizard
       3. Deploy required models:
-         - GPT models(gpt-4o, gpt-4o-mini) for chat/completion (**set TPM to max** to avoid issues with Agents notebooks)
+         - GPT models(gpt-5.2) for chat/completion (**set TPM to max** to avoid issues with Agents notebooks)
          - Embedding model for vector search
          - Ensure the model is deployed in `Global-Standard` or `DataZone-Standard`
       4. Set up connections:
@@ -96,7 +96,7 @@ Before starting the workshop, ensure you have:
       - `BING_CONNECTION_NAME`: Your Bing search connection name
       - `SERVERLESS_MODEL_NAME`: Your serverless model name
 
-      > **Note**: The model specified in `MODEL_DEPLOYMENT_NAME` must be supported by Azure AI Agents Service or Assistants API. See [supported models](https://learn.microsoft.com/en-us/azure/ai-services/agents/concepts/model-region-support?tabs=python#azure-openai-models) for details. For Grounding with Bing Search, you need to use `gpt-4o-mini` model.
+      > **Note**: The model specified in `MODEL_DEPLOYMENT_NAME` must be supported by Azure AI Agents Service or Assistants API. See [supported models](https://learn.microsoft.com/en-us/azure/ai-services/agents/concepts/model-region-support?tabs=python#azure-openai-models) for details. For Grounding with Bing Search, you need to use `gpt-5.2` model.
 
 5. **Install dependencies**:
    ```bash
