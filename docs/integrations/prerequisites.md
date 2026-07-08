@@ -290,7 +290,7 @@ nano .env
 ```bash
 # Core Configuration (Required)
 PROJECT_CONNECTION_STRING=     # Format: {region}.api.azureml.ms;{subscription_id};{resource_group};{workspace}
-MODEL_DEPLOYMENT_NAME=         # Example: gpt-5.2
+MODEL_DEPLOYMENT_NAME=         # Example: gpt-4o
 EMBEDDING_MODEL_DEPLOYMENT_NAME= # Example: text-embedding-3-small
 SERVERLESS_MODEL_NAME=         # Your serverless model name
 
