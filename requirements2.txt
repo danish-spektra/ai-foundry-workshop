@@ -1,16 +1,13 @@
-# Telemetry and Monitoring
-azure-monitor-opentelemetry                  # Azure Monitor OpenTelemetry integration
-azure-core-tracing-opentelemetry             # Azure core OpenTelemetry tracing
-opentelemetry-exporter-otlp                  # OpenTelemetry protocol exporter
-opentelemetry-sdk                            # OpenTelemetry SDK
+# ── Observability, tracing, and the notebook environment (Exercise 5) ──
+azure-monitor-opentelemetry               # Export traces to Application Insights
+azure-core-tracing-opentelemetry          # Azure OpenTelemetry tracing bridge
+opentelemetry-instrumentation-openai-v2   # Instrument the OpenAI client calls
+opentelemetry-exporter-otlp-proto-grpc    # OTLP exporter (Prompty / Aspire dashboards)
 
-# Jupyter and Development Tools
-jupyter                                      # Jupyter notebook interface
-python-dotenv                                # Environment variable management
-notebook                                     # Jupyter notebook core
-ipykernel                                    # IPython kernel for Jupyter
-pandas                                       # Data manipulation library
-tabulate                                     # Pretty-print tabular data
-nbformat                                     # Notebook format conversion
-asyncio                                      # Async I/O support
-typing                                       # Type hinting support
+# Jupyter and data utilities
+jupyter                                   # Jupyter notebook interface
+notebook                                  # Jupyter notebook core
+ipykernel                                 # IPython kernel for Jupyter
+nbformat                                  # Notebook format handling
+pandas                                    # Data manipulation (code-interpreter demo)
+tabulate                                  # Pretty-print tabular data
