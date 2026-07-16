@@ -1,8 +1,5 @@
-# Azure SDK and AI Services
-azure-identity                                # Azure authentication and credentials management
-azure-ai-projects>=2.3.0                      # Azure AI project management (v2 / New Foundry: endpoint-based client, prompt agents, Responses API)
-azure-ai-evaluation                           # Azure AI model evaluation tools
-azure-ai-contentsafety                        # Azure content safety services
-azure-search-documents                        # Azure AI Search integration
-openai>=2.8.0                                 # OpenAI Python library (chat/embeddings/responses via project.get_openai_client())
-python-dotenv                                 # Load environment variables from .env
+azure-identity                 # Microsoft Entra ID (keyless) authentication
+azure-ai-projects==2.3.0       # New Foundry (v2): endpoint-based client, prompt agents, Responses API
+azure-search-documents         # Azure AI Search index management and queries
+openai==2.8.0                  # OpenAI-compatible client via project.get_openai_client()
+python-dotenv                  # Load environment variables from .env

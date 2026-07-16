@@ -1,30 +1,27 @@
-# Azure Authentication and Core Services
-azure-identity                         # Azure authentication and credentials management
-azure-ai-projects>=2.3.0               # Azure AI project management (v2 / New Foundry endpoint-based client)
-azure-search-documents                 # Azure AI Search integration
-openai>=2.8.0                          # OpenAI library used via project.get_openai_client()
+# Core Azure SDKs
+azure-identity                            # Microsoft Entra ID (keyless) authentication
+azure-ai-projects==2.3.0                  # New Foundry (v2) endpoint-based client
+azure-search-documents                    # Azure AI Search integration
+openai==2.8.0                             # OpenAI-compatible client via project.get_openai_client()
+python-dotenv                             # Load environment variables from .env
 
+# Multi-agent frameworks (Exercise 6)
+semantic-kernel[azure]==1.53.1            # ==1.53.1 required for New Foundry AzureAIAgent
 autogen-agentchat
-autogen-ext[azure]
+autogen-core
+autogen-ext[openai]                       # AzureOpenAIChatCompletionClient
+nest_asyncio                              # Allow asyncio.run() inside Jupyter
 
-# Azure AI Services
-azure-ai-evaluation                    # Azure AI model evaluation and testing
-azure-ai-contentsafety                 # Content moderation and safety services
+# Observability and tracing (Exercise 5)
+azure-monitor-opentelemetry
+azure-core-tracing-opentelemetry
+opentelemetry-instrumentation-openai-v2
+opentelemetry-exporter-otlp-proto-grpc
 
-# Telemetry and Monitoring
-azure-monitor-opentelemetry           # Azure Monitor integration for OpenTelemetry
-azure-core-tracing-opentelemetry      # Core OpenTelemetry tracing for Azure
-opentelemetry-exporter-otlp           # OpenTelemetry protocol exporter
-
-# Jupyter Notebook Environment
-jupyter                               # Main Jupyter notebook package
-notebook                              # Core notebook functionality
-ipykernel                             # IPython kernel for Jupyter
-
-# Data Processing and Utilities
-pandas                                # Data manipulation and analysis
-tabulate                              # Pretty-print tabular data
-nbformat                              # Notebook format handling
-asyncio                               # Asynchronous I/O support
-typing                                # Type hinting support
-
+# Notebook environment and utilities
+jupyter
+notebook
+ipykernel
+nbformat
+pandas
+tabulate
