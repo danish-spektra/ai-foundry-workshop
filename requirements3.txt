@@ -1,10 +1,16 @@
 # ── Multi-agent frameworks (Exercise 6) ──
-# Semantic Kernel requires exactly 1.53.1 for the New Foundry (endpoint-based AzureAIAgent).
-semantic-kernel[azure]==1.53.1
+# Semantic Kernel Python requires 1.31.0+ for the New Foundry (endpoint-based AzureAIAgent) GA path.
+# Note: this is the Python package's own version numbering, distinct from the .NET SemanticKernel
+# package (whose GA cutoff is 1.53.1) -- do not confuse the two.
+#
+# WARNING: semantic-kernel declares azure-ai-projects~=1.0.0b12, so installing this file
+# DOWNGRADES azure-ai-projects from the 2.3.0 the notebooks need. This file MUST be installed
+# BEFORE requirements.txt (see logon-01.ps1) so the 2.3.0 pin wins the final state.
+semantic-kernel[azure]==1.44.0
 
 # AutoGen 0.4.x. The AutoGen notebook uses autogen_ext.models.openai.AzureOpenAIChatCompletionClient,
 # so the OpenAI extra is required. (Do not add the legacy 0.2 `autogen` package — it conflicts.)
-autogen-agentchat
-autogen-core
-autogen-ext[openai]
-nest_asyncio                              # Allow asyncio.run() inside Jupyter cells
+autogen-agentchat==0.7.5
+autogen-core==0.7.5
+autogen-ext[openai]==0.7.5
+nest_asyncio==1.6.0               # Allow asyncio.run() inside Jupyter cells

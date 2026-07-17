@@ -1,27 +1,30 @@
 # Core Azure SDKs
-azure-identity                            # Microsoft Entra ID (keyless) authentication
+azure-identity==1.26.0b2                  # Microsoft Entra ID (keyless) authentication
 azure-ai-projects==2.3.0                  # New Foundry (v2) endpoint-based client
-azure-search-documents                    # Azure AI Search integration
+azure-search-documents==11.7.0b2          # Azure AI Search integration
 openai==2.8.0                             # OpenAI-compatible client via project.get_openai_client()
-python-dotenv                             # Load environment variables from .env
+python-dotenv==1.2.2                      # Load environment variables from .env
 
 # Multi-agent frameworks (Exercise 6)
-semantic-kernel[azure]==1.53.1            # ==1.53.1 required for New Foundry AzureAIAgent
-autogen-agentchat
-autogen-core
-autogen-ext[openai]                       # AzureOpenAIChatCompletionClient
-nest_asyncio                              # Allow asyncio.run() inside Jupyter
+# WARNING: semantic-kernel declares azure-ai-projects~=1.0.0b12; if installed AFTER the core
+# SDKs it downgrades azure-ai-projects to 1.0.0 and breaks the v2 notebooks. If installing this
+# file alone, re-run `uv pip install azure-ai-projects==2.3.0` afterwards.
+semantic-kernel[azure]==1.44.0            # Python SDK needs 1.31.0+ for New Foundry AzureAIAgent (distinct from the .NET SDK's 1.53.1 cutoff)
+autogen-agentchat==0.7.5
+autogen-core==0.7.5
+autogen-ext[openai]==0.7.5                # AzureOpenAIChatCompletionClient
+nest_asyncio==1.6.0                       # Allow asyncio.run() inside Jupyter
 
 # Observability and tracing (Exercise 5)
-azure-monitor-opentelemetry
-azure-core-tracing-opentelemetry
-opentelemetry-instrumentation-openai-v2
-opentelemetry-exporter-otlp-proto-grpc
+azure-monitor-opentelemetry==1.8.9
+azure-core-tracing-opentelemetry==1.0.0b13
+opentelemetry-instrumentation-openai-v2==2.4b0
+opentelemetry-exporter-otlp-proto-grpc==1.43.0
 
 # Notebook environment and utilities
-jupyter
-notebook
-ipykernel
-nbformat
-pandas
-tabulate
+jupyter==1.1.1
+notebook==7.6.0
+ipykernel==7.3.0
+nbformat==5.10.4
+pandas==3.0.3
+tabulate==0.10.0
